@@ -1,0 +1,92 @@
+{
+  "name": "kova-platform",
+  "version": "1.0.0",
+  "description": "Web platform and simulation engine for the Kova ecosystem",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && cargo run",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && cargo build --release",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && cargo test",
+    "test:e2e": "cd frontend && npm run test:e2e",
+    "test:load": "cd frontend && npm run test:load",
+    "test:stress": "cd frontend && npm run test:stress",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "cd backend && cargo clippy",
+    "format": "npm run format:frontend && npm run format:backend",
+    "format:frontend": "cd frontend && npm run format",
+    "format:backend": "cd backend && cargo fmt",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "k8s:apply": "kubectl apply -f k8s/",
+    "k8s:delete": "kubectl delete -f k8s/",
+    "k8s:status": "kubectl get pods -n kova-platform",
+    "deploy:dev": "npm run docker:build && npm run docker:up",
+    "deploy:prod": "npm run build && npm run docker:build && npm run k8s:apply",
+    "clean": "npm run clean:frontend && npm run clean:backend",
+    "clean:frontend": "cd frontend && npm run clean",
+    "clean:backend": "cd backend && cargo clean",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && cargo build",
+    "start": "npm run start:backend",
+    "start:backend": "cd backend && cargo run --release",
+    "start:frontend": "cd frontend && npm start"
+  },
+  "keywords": [
+    "robotics",
+    "simulation",
+    "blockchain",
+    "decentralized",
+    "web-platform",
+    "dashboard",
+    "fleet-management",
+    "data-visualization"
+  ],
+  "author": "Kova Systems <dev@kovasystems.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kovasystems/kova-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kovasystems/kova-platform/issues"
+  },
+  "homepage": "https://www.kova.systems/",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.0",
+    "wait-on": "^7.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ws": "^8.14.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.0"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "config": {
+    "port": 3000,
+    "api_port": 8080,
+    "simulation_port": 8081,
+    "docs_port": 3001
+  }
+}
